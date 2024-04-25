@@ -4,7 +4,7 @@ import Greet from './components/Greet'
 function App() {
   return (
     <>
-      <Greet name="Umer"/>
+      <Greet name="Umer" messsageCount={10} isLoggedIn={false} />
     </>
   )
 }

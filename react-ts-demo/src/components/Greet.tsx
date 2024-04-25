@@ -1,11 +1,17 @@
 type GreetProps = {
-    name: string
+    name: string,
+    messsageCount: number,
+    isLoggedIn: boolean
 }
 
 const Greet = (props: GreetProps) => {
   return (
     <div>
-      <h1>Welcome {props.name.toLocaleUpperCase()}! TypeScript is used in this project.</h1>
+        {
+            props.isLoggedIn 
+            ? <h1>Welcome {props.name.toLocaleUpperCase()}! You have {props.messsageCount} unread messages.</h1>
+            : <h1>Welcome Guest</h1>
+        }
     </div>
   )
 }
