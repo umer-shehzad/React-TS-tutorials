@@ -5,6 +5,7 @@ import Oscar from './components/Oscar'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
 import Status from './components/Status'
+import User from './components/User'
 
 function App() {
   const person = {
@@ -30,13 +31,14 @@ function App() {
   return (
     <>
       {/* <Greet name="Umer" messsageCount={10} isLoggedIn={false} /> */}
-      <Person name={person} />
-      <PersonList names={personList} />
+      {/* <Person name={person} /> */}
+      {/* <PersonList names={personList} /> */}
       {/* <Status status='loading'/> */}
       {/* <Heading>Placeholder text</Heading> */}
-      <Oscar>
+      {/* <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
-      </Oscar>
+      </Oscar> */}
+      <User />
     </>
   )
 }
