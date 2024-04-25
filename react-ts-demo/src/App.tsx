@@ -31,7 +31,7 @@ function App() {
     <>
       {/* <Greet name="Umer" messsageCount={10} isLoggedIn={false} /> */}
       <Person name={person} />
-      {/* <PersonList names={personList} /> */}
+      <PersonList names={personList} />
       {/* <Status status='loading'/> */}
       {/* <Heading>Placeholder text</Heading> */}
       <Oscar>
