@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       {/* <Greet name="Umer" messsageCount={10} isLoggedIn={false} /> */}
-      {/* <Person name={person} /> */}
+      <Person name={person} />
       {/* <PersonList names={personList} /> */}
       {/* <Status status='loading'/> */}
       {/* <Heading>Placeholder text</Heading> */}
