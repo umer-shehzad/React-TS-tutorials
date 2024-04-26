@@ -5,9 +5,11 @@ import Oscar from './components/Oscar'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
 import Status from './components/Status'
-import User from './components/User'
+// import User from './components/User'
 import { Box } from './components/context/Box'
 import { ThemeContextProvider } from './components/context/ThemeContext'
+import { UserContextProvider } from './components/context/UserContext'
+import { User } from './components/context/User'
 
 function App() {
   const person = {
@@ -41,9 +43,12 @@ function App() {
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar> */}
       {/* <User /> */}
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </>
   )
 }
