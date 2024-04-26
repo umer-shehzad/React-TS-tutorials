@@ -6,6 +6,8 @@ import Person from './components/Person'
 import PersonList from './components/PersonList'
 import Status from './components/Status'
 import User from './components/User'
+import { Box } from './components/context/Box'
+import { ThemeContextProvider } from './components/context/ThemeContext'
 
 function App() {
   const person = {
@@ -38,7 +40,10 @@ function App() {
       {/* <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!</Heading>
       </Oscar> */}
-      <User />
+      {/* <User /> */}
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </>
   )
 }
